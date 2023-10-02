@@ -1,4 +1,5 @@
 class CoinsController < ApplicationController
+  layout "adm" #se não colocar nada ele utiliza o padrão application
   before_action :set_coin, only: %i[ show edit update destroy ]
 
   # GET /coins or /coins.json
