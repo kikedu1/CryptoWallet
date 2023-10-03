@@ -3485,3 +3485,139 @@ Migrating to CreateCoins (20230927201322)
   ↳ db/seeds.rb:23
   [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
   ↳ db/seeds.rb:23
+Started GET "/coins" for 10.0.2.2 at 2023-10-03 17:13:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (13.9ms)
+Completed 200 OK in 220ms (Views: 205.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-03 17:13:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (2.8ms)
+Completed 200 OK in 43ms (Views: 35.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-03 17:13:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (1.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (5.5ms)
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-03 17:13:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (3.1ms)
+Completed 200 OK in 49ms (Views: 44.2ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCoins (20230927201322)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "coins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "acronym" varchar, "url_image" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20230927201322_create_coins.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230927201322"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-03 17:32:21.591139"], ["updated_at", "2023-10-03 17:32:21.591139"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCoin Create (1.2ms)[0m  [1m[32mINSERT INTO "coins" ("description", "acronym", "url_image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Bitcoin"], ["acronym", "BTC"], ["url_image", "https://static.vecteezy.com/system/resources/previews/008/505/801/original/bitcoin-logo-color-illustration-png.png"], ["created_at", "2023-10-03 17:32:21.610022"], ["updated_at", "2023-10-03 17:32:21.610022"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCoin Create (1.3ms)[0m  [1m[32mINSERT INTO "coins" ("description", "acronym", "url_image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Ethereum"], ["acronym", "ETH"], ["url_image", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png"], ["created_at", "2023-10-03 17:32:21.616523"], ["updated_at", "2023-10-03 17:32:21.616523"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCoin Create (1.3ms)[0m  [1m[32mINSERT INTO "coins" ("description", "acronym", "url_image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Dash"], ["acronym", "DASH"], ["url_image", "https://cdn.icon-icons.com/icons2/2699/PNG/512/dash_logo_icon_170297.png"], ["created_at", "2023-10-03 17:32:21.622739"], ["updated_at", "2023-10-03 17:32:21.622739"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCoins (20230927201322)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "coins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "acronym" varchar, "url_image" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20230927201322_create_coins.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230927201322"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-03 17:32:54.118976"], ["updated_at", "2023-10-03 17:32:54.118976"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCoin Create (3.6ms)[0m  [1m[32mINSERT INTO "coins" ("description", "acronym", "url_image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Bitcoin"], ["acronym", "BTC"], ["url_image", "https://static.vecteezy.com/system/resources/previews/008/505/801/original/bitcoin-logo-color-illustration-png.png"], ["created_at", "2023-10-03 17:32:54.137650"], ["updated_at", "2023-10-03 17:32:54.137650"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCoin Create (1.8ms)[0m  [1m[32mINSERT INTO "coins" ("description", "acronym", "url_image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Ethereum"], ["acronym", "ETH"], ["url_image", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png"], ["created_at", "2023-10-03 17:32:54.147445"], ["updated_at", "2023-10-03 17:32:54.147445"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCoin Create (1.0ms)[0m  [1m[32mINSERT INTO "coins" ("description", "acronym", "url_image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Dash"], ["acronym", "DASH"], ["url_image", "https://cdn.icon-icons.com/icons2/2699/PNG/512/dash_logo_icon_170297.png"], ["created_at", "2023-10-03 17:32:54.153173"], ["updated_at", "2023-10-03 17:32:54.153173"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
