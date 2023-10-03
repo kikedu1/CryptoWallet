@@ -2,21 +2,13 @@ namespace :dev do
   desc "Configura o ambiente de desenvolvimento"
   task setup: :environment do
     if Rails.env.development?
-      show_spinner("Apagando BD ...") do
-        %x(rails db:drop:_unsafe) 
-      end
-     
-      show_spinner("Criando BD ...") do
-        %x(rails db:create) 
-      end
+      show_spinner("Apagando BD ...") {%x(rails db:drop:_unsafe)}
       
-      show_spinner("Migrando BD ...") do
-        %x(rails db:migrate) 
-      end
+      show_spinner("Criando BD ...") {%x(rails db:create)}
       
-      show_spinner("Populando BD ...") do
-        %x(rails db:seed) 
-      end
+      show_spinner("Migrando BD ...") {%x(rails db:migrate)}
+      
+      show_spinner("Populando BD ...") {%x(rails db:seed)}
       
     else
       puts "Você não está em ambiente de desenvolvimento!"
