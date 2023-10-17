@@ -6,8 +6,8 @@ namespace :dev do
       show_spinner("Criando BD ...") {%x(rails db:create)}
       show_spinner("Migrando BD ...") {%x(rails db:migrate)}
       #show_spinner("Populando BD ...") {%x(rails db:seed)}
+      %x(rails dev:add_mining_types) # deve ir primeiro que o add_coins devido a coluna mining_type e o sample, where, etc
       %x(rails dev:add_coins)
-      %x(rails dev:add_mining_types)
     else
       puts "Você não está em ambiente de desenvolvimento!"
     end
@@ -19,23 +19,28 @@ namespace :dev do
       coins =  [
                   {description: "Bitcoin",
                   acronym: "BTC",
-                  url_image: "https://static.vecteezy.com/system/resources/previews/008/505/801/original/bitcoin-logo-color-illustration-png.png"},
+                  url_image: "https://static.vecteezy.com/system/resources/previews/008/505/801/original/bitcoin-logo-color-illustration-png.png",
+                  mining_type: MiningType.find_by(acronym: 'PoW')}, # o where não funciona pq retorna um array. find só aceita informar o id
                   
                   {description: "Ethereum",
                   acronym: "ETH",
-                  url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png"},
+                  url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png",
+                  mining_type: MiningType.all.sample},
                   
                   {description: "Dash",
                   acronym: "DASH",
-                  url_image: "https://cdn.icon-icons.com/icons2/2699/PNG/512/dash_logo_icon_170297.png"},
+                  url_image: "https://cdn.icon-icons.com/icons2/2699/PNG/512/dash_logo_icon_170297.png",
+                  mining_type: MiningType.all.sample},
                   
                   {description: "Iota",
                   acronym: "IOT",
-                  url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1720.png"},
+                  url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1720.png",
+                  mining_type: MiningType.all.sample},
                   
                   {description: "ZCash",
                   acronym: "ZEC",
-                  url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1437.png"}
+                  url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1437.png",
+                  mining_type: MiningType.all.sample}
                 ]
 
       coins.each do |coin|
