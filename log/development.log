@@ -5996,3 +5996,268 @@ Processing by CoinsController#index as HTML
 Completed 200 OK in 227ms (Views: 211.2ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/coins" for 10.0.2.2 at 2023-10-17 19:23:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (2.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (32.3ms)
+Completed 200 OK in 851ms (Views: 758.7ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/coins/1/edit" for 10.0.2.2 at 2023-10-17 19:23:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:64
+  Rendering coins/edit.html.erb within layouts/adm
+  [1m[36mMiningType Load (4.4ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/coins/_form.html.erb:32
+  Rendered coins/_form.html.erb (144.0ms)
+  Rendered coins/edit.html.erb within layouts/adm (177.1ms)
+Completed 200 OK in 487ms (Views: 438.5ms | ActiveRecord: 9.7ms)
+
+
+Started PATCH "/coins/1" for 10.0.2.2 at 2023-10-17 19:23:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jp+IQ2wEocemqpDAfTXU1tYTGMm6OSWIJMddDswsJDW03VtG59DwpDeScdktKVecMJmet4reRcoclkurd2w57g==", "coin"=>{"description"=>"Bitcoin", "acronym"=>"BTC", "url_image"=>"https://static.vecteezy.com/system/resources/previews/008/505/801/original/bitcoin-logo-color-illustration-png.png", "mining_type_id"=>"2"}, "commit"=>"Update Coin", "id"=>"1"}
+  [1m[36mCoin Load (2.5ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:64
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/coins_controller.rb:41
+  [1m[36mMiningType Load (1.8ms)[0m  [1m[34mSELECT  "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:41
+  [1m[36mCoin Update (9.7ms)[0m  [1m[33mUPDATE "coins" SET "mining_type_id" = ?, "updated_at" = ? WHERE "coins"."id" = ?[0m  [["mining_type_id", 2], ["updated_at", "2023-10-17 19:23:07.986283"], ["id", 1]]
+  ↳ app/controllers/coins_controller.rb:41
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/coins_controller.rb:41
+Redirected to http://localhost:3000/coins/1
+Completed 302 Found in 85ms (ActiveRecord: 23.5ms)
+
+
+Started GET "/coins/1" for 10.0.2.2 at 2023-10-17 19:23:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (4.0ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:64
+  Rendering coins/show.html.erb within layouts/adm
+  Rendered coins/show.html.erb within layouts/adm (2.6ms)
+Completed 200 OK in 215ms (Views: 189.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-17 19:23:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (4.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (14.9ms)
+Completed 200 OK in 230ms (Views: 204.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/coins/1/edit" for 10.0.2.2 at 2023-10-17 19:23:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (2.1ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:64
+  Rendering coins/edit.html.erb within layouts/adm
+  [1m[36mMiningType Load (1.3ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/coins/_form.html.erb:32
+  Rendered coins/_form.html.erb (10.5ms)
+  Rendered coins/edit.html.erb within layouts/adm (34.5ms)
+Completed 200 OK in 244ms (Views: 220.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-17 19:23:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (6.8ms)
+Completed 200 OK in 179ms (Views: 163.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/coins/new" for 10.0.2.2 at 2023-10-17 19:24:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  [1m[36mMiningType Load (2.3ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/coins/_form.html.erb:32
+  Rendered coins/_form.html.erb (23.7ms)
+  Rendered coins/new.html.erb within layouts/adm (34.1ms)
+Completed 200 OK in 258ms (Views: 226.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-17 19:24:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (9.4ms)
+Completed 200 OK in 230ms (Views: 214.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/coins/new" for 10.0.2.2 at 2023-10-17 19:24:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#new as HTML
+  Rendering coins/new.html.erb within layouts/adm
+  [1m[36mMiningType Load (3.6ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/coins/_form.html.erb:32
+  Rendered coins/_form.html.erb (12.1ms)
+  Rendered coins/new.html.erb within layouts/adm (30.3ms)
+Completed 200 OK in 244ms (Views: 224.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-17 19:24:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (5.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (9.4ms)
+Completed 200 OK in 233ms (Views: 212.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/coins/1/edit" for 10.0.2.2 at 2023-10-17 19:35:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (2.9ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:64
+  Rendering coins/edit.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (0.7ms)
+  Rendered coins/edit.html.erb within layouts/adm (18.0ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 13.8ms)
+
+
+  
+SyntaxError (/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ( arg, expecting ')'
+...ype_id", MiningType.all.pluck (:description, :id), { include...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ',', expecting ')'
+...ngType.all.pluck (:description, :id), { include_blank: "Sele...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ')', expecting `end'
+...clude_blank: "Selecione ..." }) );@output_buffer.safe_append...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:40: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/coins/_form.html.erb:32: syntax error, unexpected ( arg, expecting ')'
+app/views/coins/_form.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/coins/_form.html.erb:32: syntax error, unexpected ')', expecting `end'
+app/views/coins/_form.html.erb:40: syntax error, unexpected `ensure', expecting end-of-input
+app/views/coins/edit.html.erb:3:in `_app_views_coins_edit_html_erb___792093734329115838_16440'
+Started GET "/coins/1/edit" for 10.0.2.2 at 2023-10-17 19:36:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (2.8ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:64
+  Rendering coins/edit.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (0.8ms)
+  Rendered coins/edit.html.erb within layouts/adm (23.3ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 2.8ms)
+
+
+  
+SyntaxError (/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ( arg, expecting ')'
+...ype_id", MiningType.all.pluck (:description, :id), { include...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ',', expecting ')'
+...ngType.all.pluck (:description, :id), { include_blank: "Sele...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ')', expecting `end'
+...clude_blank: "Selecione ..." }) );@output_buffer.safe_append...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:40: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/coins/_form.html.erb:32: syntax error, unexpected ( arg, expecting ')'
+app/views/coins/_form.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/coins/_form.html.erb:32: syntax error, unexpected ')', expecting `end'
+app/views/coins/_form.html.erb:40: syntax error, unexpected `ensure', expecting end-of-input
+app/views/coins/edit.html.erb:3:in `_app_views_coins_edit_html_erb___792093734329115838_16680'
+Started GET "/coins" for 10.0.2.2 at 2023-10-17 19:39:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (3.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (28.7ms)
+Completed 200 OK in 819ms (Views: 708.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/coins/1/edit" for 10.0.2.2 at 2023-10-17 19:39:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (2.3ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:64
+  Rendering coins/edit.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (0.8ms)
+  Rendered coins/edit.html.erb within layouts/adm (20.4ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 2.3ms)
+
+
+  
+SyntaxError (/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ( arg, expecting ')'
+...ype_id", MiningType.all.pluck (:description, :id), { include...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ',', expecting ')'
+...ngType.all.pluck (:description, :id), { include_blank: "Sele...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:32: syntax error, unexpected ')', expecting `end'
+...clude_blank: "Selecione ..." }) );@output_buffer.safe_append...
+...                              ^
+/vagrant/workspace/cryptowallet/app/views/coins/_form.html.erb:40: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/coins/_form.html.erb:32: syntax error, unexpected ( arg, expecting ')'
+app/views/coins/_form.html.erb:32: syntax error, unexpected ',', expecting ')'
+app/views/coins/_form.html.erb:32: syntax error, unexpected ')', expecting `end'
+app/views/coins/_form.html.erb:40: syntax error, unexpected `ensure', expecting end-of-input
+app/views/coins/edit.html.erb:3:in `_app_views_coins_edit_html_erb___1533237340262593412_16840'
+Started GET "/coins/1/edit" for 10.0.2.2 at 2023-10-17 19:40:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCoin Load (3.2ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:64
+  Rendering coins/edit.html.erb within layouts/adm
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/views/coins/_form.html.erb:32
+  Rendered coins/_form.html.erb (121.1ms)
+  Rendered coins/edit.html.erb within layouts/adm (148.1ms)
+Completed 200 OK in 391ms (Views: 353.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-17 19:40:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (2.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/adm (10.2ms)
+Completed 200 OK in 271ms (Views: 248.1ms | ActiveRecord: 2.7ms)
+
+
