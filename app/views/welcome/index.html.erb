@@ -1,5 +1,9 @@
 <h1>Seja Bem vindo!</h1>
-<p>A data de hoje é: <%= Date.today %></p>
+<p>O idioma usado nessa aplicação é: <strong><%= locale %></strong> </p>
+<p>A data de hoje é: <%= l(Date.today) %></p> <!--como estamos na view ele deixa usar l invés de I18n.l()
+<p><= I18n.t('abc') %></p> igual que na linha anterior, estamos na view solo colocamos l()-->
+<p><%= t('hello') %></p>
+
 <p>Eu sou uma variável de instância/sessão: Meu nome é <strong><%=@meu_nome%></strong> e meu curso é <strong><%=@curso%></p></strong>
 <p>Você está em ambiente de: <strong><%= ambiente_rails %></strong></p>
 
