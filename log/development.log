@@ -7742,3 +7742,584 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 444ms (Views: 398.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2023-10-19 21:21:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (540.2ms)
+Completed 200 OK in 1563ms (Views: 1518.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-19 21:21:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.3ms)
+  Rendered welcome/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 346ms (Views: 314.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-19 21:21:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.8ms)
+  Rendered welcome/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 393ms (Views: 367.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-19 21:21:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (4.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/adm (59.8ms)
+Completed 200 OK in 441ms (Views: 360.0ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-19 21:21:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 360ms (Views: 324.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-19 21:23:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/workspace/cryptowallet/app/views/welcome/index.html.erb:21: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/vagrant/workspace/cryptowallet/app/views/welcome/index.html.erb:23: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/welcome/index.html.erb:21: syntax error, unexpected `ensure', expecting ')'
+app/views/welcome/index.html.erb:23: syntax error, unexpected `end', expecting ')'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-19 21:23:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/workspace/cryptowallet/app/views/welcome/index.html.erb:21: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/vagrant/workspace/cryptowallet/app/views/welcome/index.html.erb:23: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/welcome/index.html.erb:21: syntax error, unexpected `ensure', expecting ')'
+app/views/welcome/index.html.erb:23: syntax error, unexpected `end', expecting ')'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-19 21:23:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 431ms (Views: 391.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-19 21:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 392ms (Views: 349.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-19 21:24:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 381ms (Views: 353.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-19 21:24:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (52.4ms)
+Completed 200 OK in 452ms (Views: 414.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-19 21:24:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.8ms)
+  Rendered welcome/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 294ms (Views: 267.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-19 21:31:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (610.8ms)
+Completed 200 OK in 1601ms (Views: 1562.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-19 21:52:09 +0000
+Started GET "/" for 10.0.2.2 at 2023-10-19 21:52:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.3ms)
+  Rendered welcome/index.html.erb within layouts/application (1384.1ms)
+  Rendered welcome/_menu.html.erb (8.3ms)
+  Rendered welcome/index.html.erb within layouts/application (1626.3ms)
+Completed 200 OK in 2945ms (Views: 2902.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2927ms (Views: 2890.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-19 21:53:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 348ms (Views: 314.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 17:19:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.4ms)
+  Rendered welcome/index.html.erb within layouts/application (1691.9ms)
+Completed 200 OK in 3194ms (Views: 3169.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-20 17:19:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (2.3ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (69.7ms)
+Completed 200 OK in 423ms (Views: 293.9ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-20 17:19:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (1.6ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 261ms (Views: 240.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-20 17:22:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (2.6ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 195ms (Views: 171.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 17:22:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 184ms (Views: 171.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-20 17:22:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 245ms (Views: 223.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-20 17:22:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 163ms (Views: 148.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-20 17:23:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (3.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/adm (31.3ms)
+Completed 200 OK in 340ms (Views: 205.6ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-20 17:24:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 138ms (Views: 112.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 17:24:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.3ms)
+  Rendered welcome/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 277ms (Views: 253.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2023-10-20 17:29:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (7.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (48.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (64.3ms)
+Completed 200 OK in 79ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=coin" for 10.0.2.2 at 2023-10-20 17:29:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"coin"}
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2023-10-20 17:29:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (3.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=coin" for 10.0.2.2 at 2023-10-20 17:29:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"coin"}
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2023-10-20 17:30:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (12.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=coin" for 10.0.2.2 at 2023-10-20 17:30:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"coin"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2023-10-20 17:32:15 +0000
+Started GET "/rails/info/routes?path=coin" for 10.0.2.2 at 2023-10-20 17:32:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (22.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Started GET "/" for 10.0.2.2 at 2023-10-20 17:44:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Started GET "/" for 10.0.2.2 at 2023-10-20 17:44:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (426.4ms)
+  Rendered welcome/index.html.erb within layouts/application (1237.2ms)
+Completed 500 Internal Server Error in 1387ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `coins_path' for #<#<Class:0x00007fd28ca22ef0>:0x00007fd28ca31a40>):
+    1: <li>
+    2:     <%= link_to "Cadastro de Moedas", coins_path%>
+    3: </li>
+    4: <li>
+    5:     <%= link_to "Cadastro de Tipos de Mineração", mining_types_path%>
+  Rendered welcome/_menu.html.erb (425.8ms)
+  Rendered welcome/index.html.erb within layouts/application (1270.8ms)
+  
+Completed 500 Internal Server Error in 1370ms (ActiveRecord: 0.0ms)
+
+
+app/views/welcome/_menu.html.erb:2:in `_app_views_welcome__menu_html_erb__2945673121483995644_15400'
+app/views/welcome/index.html.erb:18:in `_app_views_welcome_index_html_erb__613663986487406296_15380'
+  
+ActionView::Template::Error (undefined local variable or method `coins_path' for #<#<Class:0x00007fd28ca22ef0>:0x00007fd28ca20920>):
+    1: <li>
+    2:     <%= link_to "Cadastro de Moedas", coins_path%>
+    3: </li>
+    4: <li>
+    5:     <%= link_to "Cadastro de Tipos de Mineração", mining_types_path%>
+  
+app/views/welcome/_menu.html.erb:2:in `_app_views_welcome__menu_html_erb__2945673121483995644_15400'
+app/views/welcome/index.html.erb:18:in `_app_views_welcome_index_html_erb__613663986487406296_15380'
+Started GET "/rails/info/routes" for 10.0.2.2 at 2023-10-20 17:45:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (8.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=coin" for 10.0.2.2 at 2023-10-20 17:45:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"coin"}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2023-10-20 17:45:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (5.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=coin" for 10.0.2.2 at 2023-10-20 17:45:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"coin"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=coin" for 10.0.2.2 at 2023-10-20 17:45:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"coin"}
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2023-10-20 17:46:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (3.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.7.0/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 44ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=coin" for 10.0.2.2 at 2023-10-20 17:47:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"coin"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 17:47:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (501.2ms)
+Completed 200 OK in 1235ms (Views: 1203.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 17:48:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.0ms)
+  Rendered welcome/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 486ms (Views: 457.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 17:51:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( welcome.css )` to `config/initializers/assets.rb` and restart your server):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+    12:   </head>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1813718327705346591_17040'
+Started GET "/" for 10.0.2.2 at 2023-10-20 18:06:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (412.8ms)
+Completed 200 OK in 1586ms (Views: 1554.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-20 18:06:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 246ms (Views: 156.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-20 18:07:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 238ms (Views: 207.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-20 18:07:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 93ms (Views: 79.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 18:09:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (17.3ms)
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "scaffold.css" is not present in the asset pipeline.
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'scaffold', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2859586633271133831_17020'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 18:10:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( scaffolds.css )` to `config/initializers/assets.rb` and restart your server):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2859586633271133831_17240'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 18:11:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (594.0ms)
+Completed 500 Internal Server Error in 1242ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( scaffolds.css )` to `config/initializers/assets.rb` and restart your server):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___409220839659262242_16340'

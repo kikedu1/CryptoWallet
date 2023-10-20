@@ -1,5 +1,5 @@
 class CoinsController < ApplicationController
-  layout "adm" #se não colocar nada ele utiliza o padrão application
+  #layout "adm" #se não colocar nada ele utiliza o padrão application
   before_action :set_coin, only: %i[ show edit update destroy ]
   before_action :set_mining_type_options, only: [:new, :create, :edit, :update]
 
