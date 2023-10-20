@@ -8493,3 +8493,52 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 598ms (Views: 581.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:37:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (451.8ms)
+Completed 200 OK in 1369ms (Views: 1355.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:37:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 156ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:38:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 748ms (Views: 735.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:40:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 207ms (Views: 191.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 21:14:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (433.9ms)
+Completed 200 OK in 1592ms (Views: 1571.6ms | ActiveRecord: 0.0ms)
+
+
