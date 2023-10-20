@@ -1,0 +1,18 @@
+I, [2023-10-20T18:24:25.176557 #6633]  INFO -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b] Started GET "/inicio" for 10.0.2.2 at 2023-10-20 18:24:25 +0000
+I, [2023-10-20T18:24:25.180321 #6633]  INFO -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b] Processing by WelcomeController#index as HTML
+I, [2023-10-20T18:24:25.242487 #6633]  INFO -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b]   Rendering welcome/index.html.erb within layouts/application
+I, [2023-10-20T18:24:25.738330 #6633]  INFO -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b]   Rendered welcome/_menu.html.erb (0.7ms)
+I, [2023-10-20T18:24:25.739267 #6633]  INFO -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b]   Rendered welcome/index.html.erb within layouts/application (496.2ms)
+I, [2023-10-20T18:24:25.753371 #6633]  INFO -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b] Completed 500 Internal Server Error in 572ms
+F, [2023-10-20T18:24:25.754402 #6633] FATAL -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b]   
+F, [2023-10-20T18:24:25.755570 #6633] FATAL -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+F, [2023-10-20T18:24:25.757308 #6633] FATAL -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b]      5:     <%= csrf_meta_tags %>
+[cca1775c-7723-40d5-a0f1-14f738b77a1b]      6:     <%= csp_meta_tag %>
+[cca1775c-7723-40d5-a0f1-14f738b77a1b]      7: 
+[cca1775c-7723-40d5-a0f1-14f738b77a1b]      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[cca1775c-7723-40d5-a0f1-14f738b77a1b]      9:     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+[cca1775c-7723-40d5-a0f1-14f738b77a1b]     10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+[cca1775c-7723-40d5-a0f1-14f738b77a1b]     11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+F, [2023-10-20T18:24:25.757750 #6633] FATAL -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b]   
+F, [2023-10-20T18:24:25.758040 #6633] FATAL -- : [cca1775c-7723-40d5-a0f1-14f738b77a1b] app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1653773922477909299_16040'

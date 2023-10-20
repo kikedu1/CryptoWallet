@@ -8323,3 +8323,173 @@ Add `Rails.application.config.assets.precompile += %w( scaffolds.css )` to `conf
     12:     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   
 app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___409220839659262242_16340'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 18:12:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (266.6ms)
+Completed 200 OK in 1156ms (Views: 1140.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 18:19:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (554.1ms)
+Completed 500 Internal Server Error in 1742ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `development' for "development":ActiveSupport::StringInquirer):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/stylesheets/scaffolds.css.erb:2:in `_evaluate_template'
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__516296051767855216_16340'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 18:21:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (29.3ms)
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `development' for "development":ActiveSupport::StringInquirer):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/stylesheets/scaffolds.css.erb:2:in `_evaluate_template'
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__516296051767855216_16780'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-20 18:22:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 575ms (Views: 564.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCoin Load (2.4ms)[0m  [1m[34mSELECT  "coins".* FROM "coins" ORDER BY "coins"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:23:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (3.4ms)
+  Rendered welcome/index.html.erb within layouts/application (2160.9ms)
+Completed 500 Internal Server Error in 5051ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Text file busy @ rb_file_s_rename - (/vagrant/workspace/cryptowallet/tmp/cache/assets/sprockets/v3.0/53/53fPnZW5MPbWndlk5rLo7WYtd8IfXxrf943K7oD1OUs.cache.12440.6798.649954, /vagrant/workspace/cryptowallet/tmp/cache/assets/sprockets/v3.0/53/53fPnZW5MPbWndlk5rLo7WYtd8IfXxrf943K7oD1OUs.cache)):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3815184783208966508_16340'
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:24:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (280.1ms)
+Completed 200 OK in 2214ms (Views: 2197.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:25:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 365ms (Views: 337.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:27:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 443ms (Views: 424.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:29:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 451ms (Views: 437.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:33:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (542.0ms)
+Completed 500 Internal Server Error in 2029ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/workspace/cryptowallet/app/assets/javascripts/application.js.erb:17: syntax error, unexpected method, expecting `do' or '{' or '('
+...ime.now.hour < 12 ? “Bom dia!” : “Olá!!!” 
+...                           ^~~~
+):
+  
+app/assets/javascripts/application.js.erb:17: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1604095286104878703_16340'
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:33:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/workspace/cryptowallet/app/assets/javascripts/application.js.erb:17: syntax error, unexpected method, expecting `do' or '{' or '('
+...ime.now.hour < 12 ? “Bom dia!” : “Olá!!!” 
+...                           ^~~~
+):
+  
+app/assets/javascripts/application.js.erb:17: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1604095286104878703_16800'
+Started GET "/" for 10.0.2.2 at 2023-10-20 20:37:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 598ms (Views: 581.7ms | ActiveRecord: 0.0ms)
+
+
