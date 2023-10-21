@@ -8,14 +8,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!--eu poderia repetir a linha anterior 2 vezes e pre-compilar o jquery e notify.js, além de listá-los no 
+    /cryptowallet/config/initializers/assets.rb. Dessa forma eu tiro eles do /cryptowallet/app/assets/javascripts/application.js.erb-->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    
     <h1>CABEÇALHO - <%= params[:controller] %></h1>
     <%= yield %>
     <h1>RODAPÉ</h1>
+    
+    <script>$.notify("Funcionou", "success")</script>
   </body>
 </html>
