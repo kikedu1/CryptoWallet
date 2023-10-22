@@ -8701,3 +8701,1693 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 2100ms (Views: 2084.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2023-10-22 10:20:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (1781.8ms)
+Completed 500 Internal Server Error in 3839ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /vagrant/workspace/cryptowallet/app/assets/config
+  /vagrant/workspace/cryptowallet/app/assets/images
+  /vagrant/workspace/cryptowallet/app/assets/javascripts
+  /vagrant/workspace/cryptowallet/app/assets/stylesheets
+  /vagrant/workspace/cryptowallet/lib/assets/images
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.8.1/lib/assets/compiled
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activestorage-5.2.8.1/app/assets/javascripts
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionview-5.2.8.1/lib/assets/compiled
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /vagrant/workspace/cryptowallet/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2781771311262511144_16340'
+Started GET "/" for 10.0.2.2 at 2023-10-22 10:22:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 897ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper.js' with type 'application/javascript'
+Checked in these paths: 
+  /vagrant/workspace/cryptowallet/app/assets/config
+  /vagrant/workspace/cryptowallet/app/assets/images
+  /vagrant/workspace/cryptowallet/app/assets/javascripts
+  /vagrant/workspace/cryptowallet/app/assets/stylesheets
+  /vagrant/workspace/cryptowallet/lib/assets/images
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.8.1/lib/assets/compiled
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activestorage-5.2.8.1/app/assets/javascripts
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/actionview-5.2.8.1/lib/assets/compiled
+  /home/vagrant/.rvm/gems/ruby-2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /vagrant/workspace/cryptowallet/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/javascripts/application.js.erb:19
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2781771311262511144_16600'
+Started GET "/" for 10.0.2.2 at 2023-10-22 10:24:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 1762ms (Views: 1741.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 10:25:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (5.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 668ms (Views: 493.5ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 10:25:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 252ms (Views: 235.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 11:21:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (3.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 603ms (Views: 575.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:05:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (3.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 301ms (Views: 264.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:05:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (3.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 285ms (Views: 262.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:06:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 342ms (Views: 315.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:06:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 314ms (Views: 293.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:07:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 400ms (Views: 362.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:07:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 315ms (Views: 288.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 12:07:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (4.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 438ms (Views: 299.4ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 12:07:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (1.9ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 268ms (Views: 246.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:08:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 288ms (Views: 278.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:08:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 289ms (Views: 265.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:10:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 338ms (Views: 316.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:10:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 247ms (Views: 225.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 297ms (Views: 279.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:11:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (13.8ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 297ms (Views: 263.7ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:13:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 354ms (Views: 326.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:13:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 303ms (Views: 276.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:13:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 242ms (Views: 218.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:13:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 296ms (Views: 279.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:14:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 262ms (Views: 237.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:17:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 302ms (Views: 274.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:17:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 306ms (Views: 285.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:19:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.8ms)
+  Rendered welcome/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 378ms (Views: 355.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:20:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 277ms (Views: 258.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:22:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 315ms (Views: 289.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:22:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.3ms)
+  Rendered welcome/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 386ms (Views: 366.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:22:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 298ms (Views: 274.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:22:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 302ms (Views: 282.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:24:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 292ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:25:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 340ms (Views: 312.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:25:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 268ms (Views: 246.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:25:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.6ms)
+  Rendered welcome/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 312ms (Views: 283.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:25:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 284ms (Views: 259.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:25:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 303ms (Views: 286.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:25:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 224ms (Views: 207.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:27:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 272ms (Views: 244.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:27:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 316ms (Views: 293.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:27:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 270ms (Views: 246.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:29:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.3ms)
+  Rendered welcome/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 284ms (Views: 265.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:29:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.7ms)
+  Rendered welcome/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 322ms (Views: 302.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:29:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 311ms (Views: 282.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:29:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 287ms (Views: 263.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:29:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 364ms (Views: 340.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:29:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 274ms (Views: 250.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:30:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 297ms (Views: 272.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:30:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 300ms (Views: 276.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:35:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 390ms (Views: 366.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:35:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 306ms (Views: 281.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:35:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (3.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 292ms (Views: 271.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:35:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 320ms (Views: 300.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:35:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 245ms (Views: 225.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 12:35:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (2.4ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 295ms (Views: 273.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 12:35:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (2.3ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 276ms (Views: 258.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:35:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 311ms (Views: 286.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:35:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 240ms (Views: 223.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:36:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.4ms)
+  Rendered welcome/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 355ms (Views: 327.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:37:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 290ms (Views: 270.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:37:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 279ms (Views: 253.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:37:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.2ms)
+  Rendered welcome/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 325ms (Views: 300.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:38:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 339ms (Views: 305.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:38:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 377ms (Views: 351.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:38:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 357ms (Views: 333.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:38:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 342ms (Views: 313.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:38:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (3.5ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 352ms (Views: 327.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:38:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 348ms (Views: 319.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:38:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 379ms (Views: 349.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:38:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 348ms (Views: 323.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 12:38:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (2.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 336ms (Views: 311.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 12:39:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (2.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 303ms (Views: 279.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:39:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 314ms (Views: 289.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 12:39:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 302ms (Views: 283.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:43:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 298ms (Views: 270.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:43:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 299ms (Views: 276.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:45:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (1666.3ms)
+Completed 200 OK in 2012ms (Views: 1979.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:45:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 277ms (Views: 252.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:45:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 367ms (Views: 346.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:45:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 331ms (Views: 310.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:45:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 230ms (Views: 217.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:45:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 280ms (Views: 255.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:45:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.3ms)
+  Rendered welcome/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 344ms (Views: 326.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:45:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 363ms (Views: 335.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:45:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 340ms (Views: 313.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:47:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (557.7ms)
+Completed 200 OK in 750ms (Views: 726.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:48:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 326ms (Views: 304.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:48:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 263ms (Views: 240.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:48:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 366ms (Views: 336.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:48:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 289ms (Views: 268.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:48:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (495.3ms)
+Completed 200 OK in 761ms (Views: 740.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:48:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 317ms (Views: 294.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:50:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.0ms)
+  Rendered welcome/index.html.erb within layouts/application (602.0ms)
+Completed 200 OK in 904ms (Views: 871.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:50:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 452ms (Views: 419.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:50:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.0ms)
+  Rendered welcome/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 276ms (Views: 255.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:50:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 321ms (Views: 298.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:50:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 286ms (Views: 271.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:50:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 218ms (Views: 189.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:50:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 367ms (Views: 350.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:51:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (428.4ms)
+Completed 200 OK in 694ms (Views: 670.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:52:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 316ms (Views: 292.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:52:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 318ms (Views: 298.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:52:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 390ms (Views: 362.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:52:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 308ms (Views: 286.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:53:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (103.3ms)
+  Rendered welcome/index.html.erb within layouts/application (122.1ms)
+Completed 200 OK in 390ms (Views: 360.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:53:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 395ms (Views: 369.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:53:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 221ms (Views: 206.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:53:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 249ms (Views: 223.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:53:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.8ms)
+  Rendered welcome/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 314ms (Views: 299.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:53:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 317ms (Views: 298.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:53:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 429ms (Views: 412.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:53:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.1ms)
+  Rendered welcome/index.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 396ms (Views: 368.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:53:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.2ms)
+  Rendered welcome/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 316ms (Views: 292.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:53:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.3ms)
+  Rendered welcome/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 325ms (Views: 293.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:53:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (3.9ms)
+  Rendered welcome/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 385ms (Views: 364.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:53:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.4ms)
+  Rendered welcome/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 295ms (Views: 268.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:54:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.7ms)
+  Rendered welcome/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 315ms (Views: 298.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:54:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.4ms)
+  Rendered welcome/index.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 363ms (Views: 337.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:54:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.3ms)
+  Rendered welcome/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 286ms (Views: 260.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:54:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.4ms)
+  Rendered welcome/index.html.erb within layouts/application (28.1ms)
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:54:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.8ms)
+  Rendered welcome/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 484ms (Views: 465.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 377ms (Views: 351.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:54:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (5.8ms)
+  Rendered welcome/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 317ms (Views: 295.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:54:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 332ms (Views: 310.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:54:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.9ms)
+  Rendered welcome/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 265ms (Views: 243.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=en" for 10.0.2.2 at 2023-10-22 12:54:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 357ms (Views: 326.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:55:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 316ms (Views: 290.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:55:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 276ms (Views: 250.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:57:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (1.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 383ms (Views: 351.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:57:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.0ms)
+  Rendered welcome/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 320ms (Views: 300.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 12:57:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.6ms)
+  Rendered welcome/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 287ms (Views: 270.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:57:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 322ms (Views: 301.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:57:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 295ms (Views: 270.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:58:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (3.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 340ms (Views: 310.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:58:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 274ms (Views: 250.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:58:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 304ms (Views: 272.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 12:59:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (4.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (616.5ms)
+Completed 200 OK in 921ms (Views: 833.0ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:00:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (4.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (331.6ms)
+Completed 200 OK in 586ms (Views: 522.2ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 13:00:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (55.2ms)
+  Rendered welcome/index.html.erb within layouts/application (89.3ms)
+Completed 200 OK in 400ms (Views: 387.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?locale=pt-BR" for 10.0.2.2 at 2023-10-22 13:00:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (3.0ms)
+  Rendered welcome/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 346ms (Views: 326.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:00:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 226ms (Views: 205.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:00:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (2.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 282ms (Views: 263.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:00:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (5.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (554.0ms)
+Completed 200 OK in 855ms (Views: 785.8ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:06:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  Rendered coins/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/workspace/cryptowallet/app/views/coins/index.html.erb:35: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/vagrant/workspace/cryptowallet/app/views/coins/index.html.erb:37: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/coins/index.html.erb:35: syntax error, unexpected `ensure', expecting ')'
+app/views/coins/index.html.erb:37: syntax error, unexpected `end', expecting ')'
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:06:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (5.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (434.2ms)
+Completed 200 OK in 743ms (Views: 700.9ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:07:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (4.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 342ms (Views: 312.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:09:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (3.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 298ms (Views: 261.9ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 13:09:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (16.0ms)
+  Rendered welcome/index.html.erb within layouts/application (35.1ms)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <%= link_to "#{@coin.model_name.human}", coins_path, class:"btn btn-primary btn-lg", role:"button" %>
+    2: <%= link_to "#{MiningType.model_name.human}", mining_types_path, class:"btn btn-primary btn-lg", role:"button" %>
+    3: <!--Não sei se é correto colocar o nome do Model na partial-->
+  
+app/views/welcome/_menu.html.erb:1:in `_app_views_welcome__menu_html_erb___709366732121626846_61840'
+app/views/welcome/index.html.erb:6:in `_app_views_welcome_index_html_erb___3647842866535162297_61820'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 13:09:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (17.7ms)
+  Rendered welcome/index.html.erb within layouts/application (43.7ms)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <%= link_to "#{@coins.model_name.human}", coins_path, class:"btn btn-primary btn-lg", role:"button" %>
+    2: <%= link_to "#{MiningType.model_name.human}", mining_types_path, class:"btn btn-primary btn-lg", role:"button" %>
+    3: <!--Não sei se é correto colocar o nome do Model na partial-->
+  
+app/views/welcome/_menu.html.erb:1:in `_app_views_welcome__menu_html_erb___709366732121626846_62040'
+app/views/welcome/index.html.erb:6:in `_app_views_welcome_index_html_erb___3647842866535162297_62020'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 13:10:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (19.0ms)
+  Rendered welcome/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 267ms (Views: 228.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 13:12:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (15.1ms)
+  Rendered welcome/index.html.erb within layouts/application (38.0ms)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <%= link_to "#{@coin.model_name.human}", coins_path, class:"btn btn-primary btn-lg", role:"button" %>
+    2: <%= link_to "#{@mining_type.model_name.human}", mining_types_path, class:"btn btn-primary btn-lg", role:"button" %>
+    3: <!--Não sei se é correto colocar o nome do Model na partial-->
+  
+app/views/welcome/_menu.html.erb:2:in `_app_views_welcome__menu_html_erb___709366732121626846_65760'
+app/views/welcome/index.html.erb:6:in `_app_views_welcome_index_html_erb___3647842866535162297_65740'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 13:12:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.9ms)
+  Rendered welcome/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 337ms (Views: 274.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:12:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (2.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 270ms (Views: 240.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-22 13:12:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (3.0ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 320ms (Views: 295.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 13:12:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (30.3ms)
+  Rendered welcome/index.html.erb within layouts/application (59.0ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for :coin:Symbol):
+    1: <%= link_to "#{@coin.model_name.human}", coins_path, class:"btn btn-primary btn-lg", role:"button" %>
+    2: <%= link_to "#{@mining_type.model_name.human}", mining_types_path, class:"btn btn-primary btn-lg", role:"button" %>
+    3: <!--Não sei se é correto colocar o nome do Model na partial-->
+  
+app/views/welcome/_menu.html.erb:1:in `_app_views_welcome__menu_html_erb___709366732121626846_73060'
+app/views/welcome/index.html.erb:6:in `_app_views_welcome_index_html_erb___3647842866535162297_73040'
+Started GET "/inicio" for 10.0.2.2 at 2023-10-22 13:13:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 318ms (Views: 247.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 13:14:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  Rendered mining_types/index.html.erb within layouts/application (27.1ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h1><%=@mining_type.model_name.human(count: @coins.count)%></h1>
+    4: 
+    5: <table class="table table-hover">
+    6:   <thead>
+  
+app/views/mining_types/index.html.erb:3:in `_app_views_mining_types_index_html_erb___3102792464873500453_76780'
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 13:14:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  Rendered mining_types/index.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h1><%=@mining_type.model_name.human(count: @mining_type.count)%></h1>
+    4: 
+    5: <table class="table table-hover">
+    6:   <thead>
+  
+app/views/mining_types/index.html.erb:3:in `_app_views_mining_types_index_html_erb___3102792464873500453_76960'
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 13:15:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  Rendered mining_types/index.html.erb within layouts/application (26.9ms)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h1><%=@mining_type.model_name.human(count: @mining_types.count)%></h1>
+    4: 
+    5: <table class="table table-hover">
+    6:   <thead>
+  
+app/views/mining_types/index.html.erb:3:in `_app_views_mining_types_index_html_erb___3102792464873500453_77140'
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-22 13:15:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (3.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 307ms (Views: 248.3ms | ActiveRecord: 16.3ms)
+
+
+  [1m[36mMiningType Load (12.9ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m

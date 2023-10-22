@@ -4,5 +4,7 @@ class WelcomeController < ApplicationController
     session[:curso] = "Curso de Ruby on Rails [SESSION]"
     @meu_nome = params[:nome]
     @curso = params[:curso]
+    @coin = Coin
+    @mining_type = MiningType
   end
 end

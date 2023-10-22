@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Mining Types</h1>
+<h1><%=@mining_types.model_name.human(count: @mining_types.count)%></h1>
 
 <table class="table table-hover">
   <thead>
@@ -26,5 +26,5 @@
 
 <br>
 
-<%= link_to 'New Mining Type', new_mining_type_path %> |
-<%= link_to 'Back', inicio_path %>
+<%= link_to t('links.new'), new_mining_type_path, class:"btn btn-primary" %>
+<%= link_to t('back'), inicio_path, class:"btn btn-primary" %>
