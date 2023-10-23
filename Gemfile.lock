@@ -75,9 +75,13 @@ GEM
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
+    date (3.3.3-java)
     erubi (1.12.0)
     execjs (2.9.1)
     ffi (1.16.3)
+    ffi (1.16.3-java)
+    ffi (1.16.3-x64-mingw32)
+    ffi (1.16.3-x86-mingw32)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.14.1)
@@ -86,9 +90,10 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    listen (3.0.8)
+    listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -101,9 +106,11 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
+    mini_portile2 (2.8.5)
     minitest (5.20.0)
     msgpack (1.7.2)
-    net-imap (0.4.2)
+    msgpack (1.7.2-java)
+    net-imap (0.3.7)
       date
       net-protocol
     net-pop (0.1.2)
@@ -113,17 +120,33 @@ GEM
     net-smtp (0.4.0)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.4-x86_64-linux)
+    nio4r (2.5.9-java)
+    nokogiri (1.15.4)
+      mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
+    nokogiri (1.15.4-java)
+      racc (~> 1.4)
+    nokogiri (1.15.4-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.15.4-x86-mingw32)
       racc (~> 1.4)
     pg (1.5.4)
+    pg (1.5.4-x64-mingw32)
+    pg (1.5.4-x86-mingw32)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    pry (0.14.2-java)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+      spoon (~> 0.0)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (5.0.3)
     puma (3.12.6)
+    puma (3.12.6-java)
     racc (1.7.1)
+    racc (1.7.1-java)
     rack (2.2.8)
     rack-test (2.1.0)
       rack (>= 1.3)
@@ -162,6 +185,7 @@ GEM
       ffi (~> 1.0)
     regexp_parser (2.8.2)
     rexml (3.2.6)
+    ruby_dep (1.5.0)
     rubyzip (2.3.2)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -174,10 +198,12 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (4.14.0)
+    selenium-webdriver (4.9.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    spoon (0.0.6)
+      ffi
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -189,9 +215,12 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.7-x86_64-linux)
+    sqlite3 (1.6.7)
+      mini_portile2 (~> 2.8.0)
+    sqlite3 (1.6.7-x64-mingw32)
     thor (1.3.0)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.3.0)
     timeout (0.4.0)
     tty-cursor (0.7.1)
@@ -202,6 +231,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2023.3)
+      tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     web-console (3.7.0)
@@ -212,12 +243,18 @@ GEM
     websocket (1.2.10)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
+    websocket-driver (0.7.6-java)
+      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
 PLATFORMS
-  x86_64-linux
+  java
+  ruby
+  x64-mingw32
+  x86-mingw32
+  x86-mswin32
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
@@ -230,7 +267,7 @@ DEPENDENCIES
   pg
   pry-rails
   puma (~> 3.11)
-  rails (~> 5.2.8, >= 5.2.8.1)
+  rails (~> 5.2.8, >= 5.2.8)
   rails-i18n (~> 5.1)
   sass-rails (~> 5.0)
   selenium-webdriver
@@ -244,7 +281,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 3.0.6p216
+   ruby 2.7.7p221
 
 BUNDLED WITH
-   2.2.33
+   2.1.4

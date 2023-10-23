@@ -12103,3 +12103,155 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 304ms (Views: 277.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2023-10-23 18:14:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (410.6ms)
+Completed 200 OK in 1418ms (Views: 1339.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-23 18:14:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (1.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 251ms (Views: 231.6ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-23 18:14:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (1.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 175ms (Views: 159.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-23 18:14:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 186ms (Views: 176.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-23 18:14:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 171ms (Views: 159.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-23 18:22:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (272.6ms)
+Completed 200 OK in 1405ms (Views: 1354.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-23 18:25:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.1ms)
+  Rendered welcome/index.html.erb within layouts/application (272.3ms)
+Completed 200 OK in 1347ms (Views: 1297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-10-23 18:46:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.7.7/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.6ms)
+  Rendered welcome/index.html.erb within layouts/application (1470.2ms)
+Completed 200 OK in 4860ms (Views: 4721.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-23 18:47:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (2.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 381ms (Views: 354.6ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/coins" for 10.0.2.2 at 2023-10-23 18:47:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CoinsController#index as HTML
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:3
+  [1m[36mCoin Load (0.9ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:16
+  Rendered coins/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 163ms (Views: 151.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-23 18:47:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (2.1ms)
+  Rendered welcome/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 298ms (Views: 284.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for 10.0.2.2 at 2023-10-23 18:47:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 239ms (Views: 225.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-23 18:47:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.9ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 363ms (Views: 341.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/mining_types" for 10.0.2.2 at 2023-10-23 18:47:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MiningTypesController#index as HTML
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (1.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 266ms (Views: 250.1ms | ActiveRecord: 3.0ms)
+
+
