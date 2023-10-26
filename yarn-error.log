@@ -1,20 +1,17 @@
 Arguments: 
-  /home/vagrant/.nvm/versions/node/v14.21.3/bin/node /home/vagrant/.nvm/versions/node/v14.21.3/bin/yarn add webpack --dev
+  /home/vagrant/.nvm/versions/node/v12.22.12/bin/node /home/vagrant/.nvm/versions/node/v12.22.12/bin/yarn webpack --config /vagrant/workspace/cryptowallet/config/webpack/production.js
 
 PATH: 
-  /home/vagrant/.rvm/gems/ruby-2.7.7/bin:/home/vagrant/.rvm/gems/ruby-2.7.7@global/bin:/home/vagrant/.rvm/rubies/ruby-2.7.7/bin:/home/vagrant/.rvm/bin:/home/vagrant/.nvm/versions/node/v14.21.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  /home/vagrant/.rvm/gems/ruby-2.7.7/bin:/home/vagrant/.rvm/gems/ruby-2.7.7@global/bin:/home/vagrant/.rvm/rubies/ruby-2.7.7/bin:/home/vagrant/.rvm/bin:/home/vagrant/.nvm/versions/node/v12.22.12/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
-  1.22.19
+  1.4.0
 
 Node version: 
-  14.21.3
+  12.22.12
 
 Platform: 
   linux x64
-
-Trace: 
-  Error: EPROTO: protocol error, symlink '../../../acorn/bin/acorn' -> '/vagrant/workspace/cryptowallet/node_modules/acorn-import-assertions/node_modules/.bin/acorn'
 
 npm manifest: 
   {
@@ -60,3 +57,16 @@ Lockfile:
     version "1.14.4"
     resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.4.tgz#8eec1d8ff02a5a3a152dd43414a15c7b79fd69b6"
     integrity sha512-VKAPR2KCx8Uw0oVn0Rt4iggzat+MJ1wu1uJiDnfnMiQcGQRBIopZLfXMKsK/K8NPEerY5kefaYtYjTLb3F6ncw==
+
+Trace: 
+  Error: Command "webpack" not found.
+      at new MessageError (/home/vagrant/.nvm/versions/node/v12.22.12/lib/node_modules/yarn/lib/cli.js:186:110)
+      at /home/vagrant/.nvm/versions/node/v12.22.12/lib/node_modules/yarn/lib/cli.js:86874:17
+      at Generator.next (<anonymous>)
+      at step (/home/vagrant/.nvm/versions/node/v12.22.12/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /home/vagrant/.nvm/versions/node/v12.22.12/lib/node_modules/yarn/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/home/vagrant/.nvm/versions/node/v12.22.12/lib/node_modules/yarn/lib/cli.js:23457:28)
+      at /home/vagrant/.nvm/versions/node/v12.22.12/lib/node_modules/yarn/lib/cli.js:95:12
+      at runCommand (/home/vagrant/.nvm/versions/node/v12.22.12/lib/node_modules/yarn/lib/cli.js:86879:22)
+      at Object.<anonymous> (/home/vagrant/.nvm/versions/node/v12.22.12/lib/node_modules/yarn/lib/cli.js:86979:14)
